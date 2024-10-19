@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator</title>
+    <link rel="stylesheet" href="/static/style.css">  <!-- Link do zewnętrznego CSS -->
+</head>
+<body>
+    <h1>Elevator System</h1>
+
+    <div id="container">
+        <div id="elevator-shaft">
+            <div id="elevator"></div>
+        </div>
+
+        <div id="controls">
+            <button onclick="requestFloor(6)">Floor 6</button>
+            <button onclick="requestFloor(5)">Floor 5</button>
+            <button onclick="requestFloor(4)">Floor 4</button>
+            <button onclick="requestFloor(3)">Floor 3</button>
+            <button onclick="requestFloor(2)">Floor 2</button>
+            <button onclick="requestFloor(1)">Floor 1</button>
+            <button onclick="requestFloor(0)">Floor 0</button>
+        </div>
+    </div>
+
+    <h3 id="current-floor">Current Floor: 0</h3>
+    <h3 id="queue">Queue: </h3>
+    <h3 id="direction">Direction: stopped</h3>
+
+    <script src="/static/script.js"></script>  <!-- Ładowanie JavaScript na końcu -->
+</body>
+</html>

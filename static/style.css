@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#elevator-shaft {
+    width: 100px;
+    height: 600px;  /* Adjusted height for 7 floors */
+    border: 2px solid black;
+    position: relative;
+    margin-right: 20px;
+}
+
+#elevator {
+    width: 90px;
+    height: 90px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    transition: bottom 1s ease;
+}
+
+#controls {
+    position: relative;
+    height: 600px;  /* Match the height of the elevator shaft */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -20px;  /* Move buttons closer to the elevator shaft */
+}
+
+button {
+    width: 100px;
+    height: 60px;
+}
